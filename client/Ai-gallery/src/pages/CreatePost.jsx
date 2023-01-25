@@ -46,7 +46,7 @@ const CreatePost = () => {
         setGeneratingImg(false);
       }
     } else {
-      alert('Please provide proper prompt');
+      alert('Por favor insira prompt valido');
     }
   };
 
@@ -65,7 +65,7 @@ const CreatePost = () => {
         });
 
         await response.json();
-        alert('Success');
+        alert('Sucesso!');
         navigate('/');
       } catch (err) {
         alert(err);
